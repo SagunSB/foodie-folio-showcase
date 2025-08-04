@@ -22,7 +22,7 @@ const AboutSection = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2010, Bella Vista has been a cornerstone of fine dining in the heart of the city. 
+                  Founded in 2025, DELICIOUS BITES has been a cornerstone of fine dining in the heart of the city. 
                   Our commitment to exceptional cuisine and unparalleled service has earned us recognition 
                   among food enthusiasts and critics alike.
                 </p>
