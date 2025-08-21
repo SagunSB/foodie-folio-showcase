@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
-              About Delicious Bites
+              About Bella Vista
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A culinary journey that began with passion and continues with excellence.
@@ -22,7 +22,7 @@ const AboutSection = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2025, DELICIOUS BITES has been a cornerstone of fine dining in the heart of the city. 
+                  Founded in 2010, Bella Vista has been a cornerstone of fine dining in the heart of the city. 
                   Our commitment to exceptional cuisine and unparalleled service has earned us recognition 
                   among food enthusiasts and critics alike.
                 </p>
