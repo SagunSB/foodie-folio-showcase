@@ -88,76 +88,56 @@ const ContactSection = () => {
             <Card className="bg-card/80 backdrop-blur-sm border border-border/50">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                  Make a Reservation
+                  Quick Reservation
                 </h3>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-2 gap-4">
+                <form className="space-y-5">
+                  {/* Contact Info Group */}
+                  <div className="space-y-4 p-4 bg-muted/30 rounded-lg">
+                    <h4 className="font-medium text-foreground text-sm uppercase tracking-wide">Contact</h4>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        First Name
+                        Name
                       </label>
-                      <Input placeholder="John" className="bg-background/50" />
+                      <Input placeholder="Your full name" className="bg-background/50 h-12" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Last Name
+                        Phone
                       </label>
-                      <Input placeholder="Doe" className="bg-background/50" />
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Email
-                    </label>
-                    <Input type="email" placeholder="john@example.com" className="bg-background/50" />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Phone
-                    </label>
-                    <Input type="tel" placeholder="(555) 123-4567" className="bg-background/50" />
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Date
-                      </label>
-                      <Input type="date" className="bg-background/50" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Time
-                      </label>
-                      <Input type="time" className="bg-background/50" />
+                      <Input type="tel" placeholder="(555) 123-4567" className="bg-background/50 h-12" />
                     </div>
                   </div>
 
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Party Size
-                    </label>
-                    <Input type="number" min="1" max="12" placeholder="2" className="bg-background/50" />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Special Requests
-                    </label>
-                    <Textarea 
-                      placeholder="Any dietary restrictions or special occasions?" 
-                      className="bg-background/50 min-h-[100px]"
-                    />
+                  {/* Reservation Details Group */}
+                  <div className="space-y-4 p-4 bg-muted/30 rounded-lg">
+                    <h4 className="font-medium text-foreground text-sm uppercase tracking-wide">Details</h4>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-foreground mb-2">
+                          Date
+                        </label>
+                        <Input type="date" className="bg-background/50 h-12" />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-foreground mb-2">
+                          Guests
+                        </label>
+                        <Input type="number" min="1" max="8" placeholder="2" className="bg-background/50 h-12" />
+                      </div>
+                    </div>
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
+                    size="xl"
+                    className="w-full bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 min-h-[56px] text-lg font-semibold"
                   >
-                    Submit Reservation Request
+                    Reserve Your Table
                   </Button>
+                  
+                  <p className="text-xs text-muted-foreground text-center">
+                    We'll call you within 30 minutes to confirm your reservation
+                  </p>
                 </form>
               </CardContent>
             </Card>

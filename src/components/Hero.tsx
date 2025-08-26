@@ -23,21 +23,21 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-white/90 mb-8 font-light leading-relaxed animate-fade-in">
           Where culinary artistry meets exceptional dining experience
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in max-w-lg mx-auto">
           <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 text-lg px-8 py-6"
+            size="xl" 
+            className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 min-h-[56px]"
             onClick={() => scrollToSection('menu')}
           >
             Explore Menu
           </Button>
           <Button 
-            size="lg" 
+            size="xl" 
             variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 text-lg px-8 py-6"
+            className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300 min-h-[56px]"
             onClick={() => scrollToSection('contact')}
           >
-            Reserve Table
+            Reserve Now
           </Button>
         </div>
       </div>

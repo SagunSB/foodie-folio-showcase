@@ -20,32 +20,24 @@ const Header = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </button>
+          <nav className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('menu')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-4 py-2 rounded-md hover:bg-muted/50 font-medium"
             >
               Menu
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors px-4 py-2 rounded-md hover:bg-muted/50 font-medium"
             >
               About
             </button>
-            <button 
+            <Button 
+              size="lg"
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 min-h-[44px]"
             >
-              Contact
-            </button>
-            <Button variant="default" className="bg-gradient-to-r from-primary to-primary-glow">
               Reserve Table
             </Button>
           </nav>
@@ -62,32 +54,24 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
-            <div className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-left text-foreground hover:text-primary transition-colors"
-              >
-                Home
-              </button>
+            <div className="flex flex-col space-y-3">
               <button 
                 onClick={() => scrollToSection('menu')}
-                className="text-left text-foreground hover:text-primary transition-colors"
+                className="text-left text-foreground hover:text-primary transition-colors py-3 px-2 hover:bg-muted/50 rounded-md font-medium"
               >
                 Menu
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-left text-foreground hover:text-primary transition-colors"
+                className="text-left text-foreground hover:text-primary transition-colors py-3 px-2 hover:bg-muted/50 rounded-md font-medium"
               >
                 About
               </button>
-              <button 
+              <Button 
                 onClick={() => scrollToSection('contact')}
-                className="text-left text-foreground hover:text-primary transition-colors"
+                size="lg"
+                className="bg-gradient-to-r from-primary to-primary-glow w-full mt-2"
               >
-                Contact
-              </button>
-              <Button variant="default" className="bg-gradient-to-r from-primary to-primary-glow w-full">
                 Reserve Table
               </Button>
             </div>
